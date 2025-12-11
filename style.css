@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(100deg, #969696, #b48d68);
+    background: linear-gradient(100deg, #53291f, #5e453f);
     min-height: 100vh;
     padding: 2rem;
     color: white;
@@ -27,8 +27,8 @@ body {
     border: none;
     border-radius: 12px;
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.356);
-    color: rgb(236, 186, 119);
+    background: rgba(78, 78, 78, 0.61);
+    color: rgb(193, 190, 187);
     backdrop-filter: blur(5px);
 }
 
@@ -68,7 +68,7 @@ body {
 .coffee-box h3 {
     font-size: 1.1rem;
     margin: 0;
-    color: rgb(223, 191, 161);
+    color: rgb(76, 53, 35);
 }
 
 img{
