@@ -1,30 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Dinos</title>
+    <title>Dinosaurier</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
-<div class="container">
-    <input type="text" id="searchInput" placeholder="Dino suchen..." />
-    <ul id="coffeeList"></ul>
-</div>
+    <!-- iOS/iPadOS Floating Navbar -->
+    <nav class="navbar-floating">
+        <div class="navbar-content">
+            <!-- Navbar Brand -->
+            <a href="index.html" class="navbar-brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                <span>Dinosaurier</span>
+            </a>
 
-<!-- Place this right inside <body>, e.g. at the top of your page -->
-<div id="homeBtn" class="glass-btn" title="Back to Home">
-    <!-- A small house‑icon (inline SVG) – no external libraries needed -->
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-    </svg>
-</div>
+            <!-- Navbar Items -->
+            <ul class="navbar-items">
+                <li class="navbar-item">
+                    <a href="#dino-list" class="navbar-link">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <span>Alle</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h8v14z"/>
+                        </svg>
+                        <span>Info</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h8v14z"/>
+                        </svg>
+                        <span>Mehr</span>
+                    </a>
+                </li>
+            </ul>
 
+            <!-- Home Button -->
+            <a href="index.html" class="glass-btn" title="Zur Startseite">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
 
-<script src="script.js"></script>
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center py-4">
+        <div class="container">
+            <h1 class="text-center mb-5 display-4">🦕 Dinosausier 🦖</h1>
 
+            <!-- Dinosaurier Grid -->
+            <div class="row g-4" id="dino-list">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Ankylosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/ankylosaurus-in-nature.webp" class="card-img-top" alt="Ankylosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ankylosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Stegosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/stegosaurus-side.webp" class="card-img-top" alt="Stegosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Stegosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Spinosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/spinosaurus-dinosaur-artwork.webp" class="card-img-top" alt="Spinosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Spinosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Triceratops.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/triceratops.webp" class="card-img-top" alt="Triceratops"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Triceratops</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Velociraptor.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/velociraptor-dinosaur-standing-in-the-yellow-grass.webp" class="card-img-top" alt="Velociraptor"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Velociraptor</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Pterandon.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/pterosaur-pteranodon.webp" class="card-img-top" alt="Pterandon"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pterandon</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Plesiosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/elasmosaurus.webp" class="card-img-top" alt="Plesiosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Plesiosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Mosasaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/hunting_mosasaurus_hobetsuensis_by_malvit-d6k30gt_2aed.webp" class="card-img-top" alt="Mosasaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mosasaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/Brachiosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/brachiosaurus.webp" class="card-img-top" alt="Brachiosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Brachiosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="Rezepte (2)/allosaurus.html" class="dino-card text-decoration-none h-100">
+                        <div class="card h-100 border-0 glass-card">
+                            <img src="imgs/allosaurus-dinosaur-isolated-background-photo.webp" class="card-img-top" alt="Allosaurus"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Allosaurus</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
 
 </body>
 </html>
