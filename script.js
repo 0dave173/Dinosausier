@@ -1,3 +1,6 @@
+
+import { Analytics } from "@vercel/analytics/next"
+
 // const coffeeTypes = [
 //     "Ankylosaurus", "Stegosaurus", "Spinosaurus", "Triceratops", "Velociraptor",
 //     "Pterandon", "Plesiosaurus", "Mosasaurus", "Brachiosaurus", "Allosaurus",
